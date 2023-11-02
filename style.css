@@ -1,0 +1,113 @@
+body {
+margin: 0 auto;
+height: 100vh;
+}
+
+header {
+    border-bottom: gray 3px solid;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.navBarUi {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2rem;
+    list-style:none ;
+    
+}
+.navBarUi li a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.showNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.858); 
+    color: black;
+    top: 0;
+    list-style: none;
+    padding: 0.4rem;
+}
+
+.hamburger {
+    display: none;
+    right: 1rem;
+}
+
+.fixedBurger {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 12;
+    height: 1rem;
+}
+
+.theme_switch {
+    background-color: black;
+    color: white;
+}
+
+.positionBtn{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    height: 1rem;
+    border: none;
+    
+}
+.darkMode {
+    background-image:linear-gradient(to bottom right,#0d0d0d, #210891, #0d0d0d);
+    background: cover;
+    
+	color: #fdfdfd;
+
+}
+.spacing {
+    padding-top: 3rem;
+   max-width: 300px;
+   margin:  0 auto;
+}
+.p_headline {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .navBarUi {
+        margin-right: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 2rem;
+        
+}
+}
+@media screen and (max-width: 480px) {
+    .hamburger {
+        display: block; 
+        height: 2rem;
+        margin: auto;
+        margin-right: 1rem;
+        margin-top: 1rem;
+}
+    .navBarUi {
+        display: none;
+    }
+    
+    .positionBtn {
+        height: 2rem;
+    }
+}   
